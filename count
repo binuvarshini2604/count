@@ -1,0 +1,23 @@
+import java.util.*;
+public class Count
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the Sting: ");
+String str=sc.nextLine();
+System.out.println("Total neumber of words in String is: ");
+wordcount(str);
+}
+static void wordcount(String str)
+{
+int count=0;
+char ch[]=str.toCharArray();
+for(int i=0;i<ch.length;i++)
+{
+if((str.charAt(i)=='')&&str.charAt(i+1)!='')
+count++;
+}
+System.out.println(count+1);
+}
+}
